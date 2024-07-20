@@ -1,0 +1,12 @@
+[package]
+name = "image-save-web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.8.0"
+bincode = "1.3.3"
+serde = { version = "1.0.204", features = ["derive"] }
+solana-client = "2.0.2"
+solana-sdk = "2.0.2"
+tinytemplate = "1.2.1"
