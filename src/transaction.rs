@@ -1,7 +1,7 @@
 use solana_sdk::pubkey::Pubkey;
 use serde::{Serialize, Deserialize};
 
-pub const PROGRAM_ID: &str = "A3dGa9KV1NUrVyTWrZRAF3QJqBohi2vmipmfQfXc2ww1";
+pub const PROGRAM_ID: &str = "imgZzuUv47Wwy6aV39mAksorLYZkUfswwp74Bq9PPjX";
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Image {

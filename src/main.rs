@@ -7,7 +7,7 @@ use solana_client::nonblocking::rpc_client::RpcClient;
 use solana_sdk::pubkey::Pubkey;
 use transaction::Image;
 
-const RPC_URL: &str = "http://localhost:8899";
+const RPC_URL: &str = "https://api.devnet.solana.com";
 
 static INDEX_HTML: &'static str = include_str!("../content/index.html");
 static CSS: &'static str = include_str!("../content/output.css");
@@ -52,7 +52,7 @@ async fn main() -> std::io::Result<()> {
             .service(walletjs)
             .service(get_data_and_pda)
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0", 8080))?
     .run().await
 }
 

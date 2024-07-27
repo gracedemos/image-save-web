@@ -1,4 +1,4 @@
-const PROGRAM_ID = "A3dGa9KV1NUrVyTWrZRAF3QJqBohi2vmipmfQfXc2ww1";
+const PROGRAM_ID = "imgZzuUv47Wwy6aV39mAksorLYZkUfswwp74Bq9PPjX";
 
 function getProvider() {
 	if ("phantom" in window) {
@@ -77,7 +77,7 @@ async function addImage() {
 
 		transaction.add(instruction);
 
-		const connection = new solanaWeb3.Connection("http://localhost:8899");
+		const connection = new solanaWeb3.Connection("https://api.devnet.solana.com");
 		const blockhash = (await connection.getLatestBlockhash("finalized")).blockhash;
 
 		transaction.recentBlockhash = blockhash;
