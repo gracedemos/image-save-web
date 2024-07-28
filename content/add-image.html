@@ -11,22 +11,22 @@
 	<body class="bg-slate-800 flex flex-col h-screen">
 		<div class="flex bg-slate-600 p-3 justify-center">
 			<button class="text-center bg-slate-700 hover:bg-slate-800 p-6 mr-3 rounded" onclick='redirect("/")'>
-				<p class="text-slate-100">Find Image</p>
+				<p class="text-slate-300">Find Image</p>
 			</button>
 			<button class="text-center bg-slate-700 hover:bg-slate-800 p-6 rounded" onclick='redirect("/add-image")'>
-				<p class="text-slate-100">Add Image</p>
+				<p class="text-slate-300">Add Image</p>
 			</button>
 		</div>
 		<div class="flex justify-center items-center h-screen">
 			<div class="flex flex-col justify-center bg-slate-600 p-6 w-1/2 rounded">
-				<h1 class="text-center my-2 text-slate-100">Add Image</h1>
-				<button id="walletButton" class="text-center bg-slate-700 hover:bg-slate-800 p-6 mx-2 mt-5 mb-2 rounded">
-					<p id="walletAddress" class="text-slate-100">Connect Wallet</p>
+				<h1 class="text-center my-2 text-2xl text-slate-300">Add Image</h1>
+				<button id="walletButton" class="text-center bg-slate-700 hover:bg-slate-800 p-6 mx-2 mt-5 rounded">
+					<p id="walletAddress" class="text-slate-300">Connect Wallet</p>
 				</button>
-				<input id="titleInput" class="mx-2 my-5 h-8 rounded p-2" type="text" placeholder="Image Title"></input>
-				<input id="urlInput" class="mx-2 mb-5 h-8 rounded p-2" type="text" placeholder="Image URL"></input>
+				<input id="titleInput" class="focus:outline-none focus:ring-1 focus:ring-slate-300 placeholder:text-slate-500 bg-slate-700 text-slate-300 mx-2 my-5 h-8 rounded p-2" type="text" placeholder="Image Title"></input>
+				<input id="urlInput" class="focus:outline-none focus:ring-1 focus:ring-slate-300 placeholder:text-slate-500 bg-slate-700 text-slate-300 mx-2 mb-5 h-8 rounded p-2" type="text" placeholder="Image URL"></input>
 				<button id="addImageButton" class="text-center bg-slate-700 hover:bg-slate-800 p-6 mx-2 mb-2 rounded">
-					<p class="text-slate-100">Add Image</p>
+					<p class="text-slate-300">Add Image</p>
 				</button>
 			</div>
 		</div>
